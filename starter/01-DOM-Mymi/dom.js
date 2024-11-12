@@ -7,21 +7,41 @@ http://icant.co.uk/articles/domessentials/
 
 /* 1. Cibler l'élément d'id nav */
 
+const elementsNav = document.getElementsByTagName('nav');
+console.log(elementsNav);
 
 /* 2. Récupérer tous les li */
+
+const getLi = document.querySelectorAll("li");
+console.log(getLi);
 
 
 /* 3. Cibler le 4e li */
 
+const fourthItems = getLi[3];
+console.log(fourthItems);
+
 
 /* 4. Compter le nombre de li dans la page */
+
+const nombreLi = document.querySelectorAll("li");
+
+const liLenght = nombreLi.length;
+
+console.log(liLenght);
 
 
 /* 5. Cibler le premier li pair */
 
+const firstLiPair = document.querySelector('li:nth-child(even)');
+
+console.log(firstLiPair);
+
 
 /* 6. Récupérer tous les li de classe impair */
 
+const liImpair = document.getElementsByClassName('impair');
+console.log(liImpair);
 
 /* a) afficher ce qu'on obtient */
 
@@ -30,7 +50,6 @@ http://icant.co.uk/articles/domessentials/
 
 
 /* c) afficher chacun des li impair */
-
 
 
 /* d) compter le nombre de li de classe impair dans la page */
@@ -65,14 +84,20 @@ http://icant.co.uk/articles/domessentials/
 
 
 /* 11. Chaînage de méthodes - que retournent les expressions suivantes ? */
+
 /* a) document.getElementById("nav"). getElementsByTagName("li")[3].firstChild */
 
+// Cela retourne le quatrième élément li (car on compte de 0) à l'intérieur du parent qui possède l'id "nav",
+// puis le premier élément du quatrième li
 
 /* b) document. getElementsByTagName("li")[2].childNodes[3].firstChild */
+
+// Retourne le premier élément du quatrième noeud situé en troisième position dans li
 
 
 /* c) document. getElementsByTagName("li")[2].firstChild.firstChild */
 
+// Retourne le premier en enfant du premier enfant du troisième enfant de li
 
 
 /* 12. Afficher les propriétés (nom du nœud, type de nœud, valeur du nœud) d'un nœud
@@ -89,6 +114,7 @@ http://icant.co.uk/articles/domessentials/
 
 
 /* 14. Modifier les attributs d'un élément */
+
 /* a) Changer la valeur de l'attribut href du lien "Photos" en "photos.php" */
 
 
@@ -99,7 +125,6 @@ http://icant.co.uk/articles/domessentials/
        (faites-le en utilisant la méthode querySelector pour cible l'ul
         et querySelectorAll pour cibler les li)
 */
-
 
 
 /* 16. Ajouter un li à la fin de la liste */
@@ -129,11 +154,28 @@ http://icant.co.uk/articles/domessentials/
 
 /* 19. Dupliquer le li "Photos" et s'en servir pour ajouter un lien
 	   - juste après le lien "Photos"
-	   - dont le libellé est "Visuals" 
-	   - avec une boîte de dialogue au survol qui affiche le texte "voir la galerie" 
+	   - dont le libellé est "Visuals"
+	   - avec une boîte de dialogue au survol qui affiche le texte "voir la galerie"
 	   - qui pointe vers la page "visuals.html " */
 
+// On doit d'abord sélectionner le lien "photo"
 
+const photoLien = document.getElementsByTagName('li')[3];
+
+// On le clone
+
+const visualsItem = photoLien.cloneNode(true);
+
+// On modifie ensuite le clone par ce qu'on veut
+
+visualsLink = visualsItem.querySelector('a');
+visualsLink.textContent='Visuals';
+visualsLink.setAttribute('href', 'visuals.html');
+visualsLink.setAttribute('title', 'voir la galerie');
+
+// On l'insère
+
+photoLien.parentNode.insertBefore(visualsItem, photoLien.nextSibling);
 
 
 

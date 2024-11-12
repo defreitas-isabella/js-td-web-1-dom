@@ -51,9 +51,6 @@ Affichez la couleur du texte de chacun des trois paragraphes de la page
 */
 
 // 1. Les limites de la propriété style
-
-
-
 // 2. La fonction getComputedStyle()
 /*
 La fonction window.getComputedStyle() (https://developer.mozilla.org/fr/docs/Web/API/Window/getComputedStyle)
@@ -61,6 +58,13 @@ La fonction window.getComputedStyle() (https://developer.mozilla.org/fr/docs/Web
 - renvoie un objet de type Style représentant son style
 - les différents styles de l'élément sont des propriétés de cet objet Style
 */
+
+const parametre = document.getElementById('para');
+const style = window.getComputedStyle(parametre, null);
+
+console.log("Police de caractères : ", getComputedStyle.fontFamily);
+console.log("Couleur :", getComputedStyle);
+
 /* EXEFCICE 3 :
 Affichez la police de caractère et la couleur du 3e paragraphe (qui a l'id "para")
 */

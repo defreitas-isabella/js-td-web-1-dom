@@ -16,8 +16,7 @@ EXERCICE 1 : Afficher dans la console
 - le titre du document
 */
 
-
-
+//
 
 
 // 2. Découvrir le type d'un nœud
@@ -27,7 +26,8 @@ La valeur de cette propriété est document.ELEMENT_NODE (une constante qui vaut
 et document.TEXT_NODE (une constante qui vaut 3) pour un nœud textuel.
 Voir documentation sur le MDN : https://developer.mozilla.org/fr/docs/Web/API/Node/nodeType
 */
-/* 
+/*
+
 EXERCICE 2 : 
 Tester si le nœud body est de type document.ELEMENT_NODE
 - si oui, afficher "body est un noeud élément" ;
@@ -37,17 +37,13 @@ Afficher la valeur de la propriété nodeType du body dans la console
 https://developer.mozilla.org/fr/docs/Web/API/Node/nodeType)
 */
 
-
-
-
-
-
 // 3. Accéder aux enfants d'un nœud élément
 /*
 Chaque objet du DOM de type élément possède une propriétéchildNodes.
 Il s'agit d'une collection ordonnée regroupant tous ses nœuds enfants sous la forme d'objets DOM.
 On peut utiliser cette collection un peu comme un tableau pour accéder aux différents enfants d'un nœud.
 */
+
 /* 
 EXERCICE 3 : 
 Accéder aux enfants d'un nœud. Afficher :
@@ -77,6 +73,8 @@ Accéder au parent d'un nœud. Afficher
 - le parent du noeud h1 ;
 - le parent du noeud document ;
 */
+
+
 
 // Affiche le parent du noeud h1
 

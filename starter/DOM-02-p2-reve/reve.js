@@ -10,9 +10,14 @@ SOURCE : https://github.com/oc-courses/javascript-web
 
 // Insérez votre code ici
 
-
+function compterElements(selecteur) {
+    const elements = document.querySelectorAll(selecteur);
+    return elements.length;
+}
+// Cette fonction sert à afficher les éléments qu'on souhaite grâce aux consoles log qu'on écrit après
 
 console.log(compterElements("p")); // Doit afficher 4
 console.log(compterElements(".adjectif")); // Doit afficher 3
 console.log(compterElements("p .adjectif")); // Doit afficher 3
 console.log(compterElements("p > .adjectif")); // Doit afficher 2
+

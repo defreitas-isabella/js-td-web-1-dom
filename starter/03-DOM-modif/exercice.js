@@ -5,7 +5,8 @@ SOURCE :
 - https://github.com/oc-courses/javascript-web
 */
 
-/* EXERCICE RÉCAPITULATIF : 
+/* EXERCICE RÉCAPITULATIF :
+
 Vous disposez d'un document HTML contenant juste un body
 et un titre "Mes jeux". Écrire le code JS qui
 - place dans un objet "mesJeux" les 3 jeux suivants avec leur catégorie

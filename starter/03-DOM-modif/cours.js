@@ -16,15 +16,13 @@ La propriété innerHTML
 !! N.B. Limiter son usage (déconseillé pour plusieurs raisons), on verra des méthodes plus adaptées.
 */
 /*
+
 EXERCICE 1 :
 1. Enregistrer l'ul d'id "langages" dans la variable ulElt et l'afficher
 2. Ajouter un nouveau langage (C) à cette liste et la réafficher
 	(Aide : on lui ajoute (opérateur+=) une entrée sous la forme d'une balise <li>)
 3. Vider la liste de tout son contenu et la réafficher
 */
-
-
-
 
 
 // 2. Le contenu textuel
@@ -102,9 +100,11 @@ L'ajout d'un nouvel élément à une page web se décompose en trois opérations
 		* est une méthode de l'objet document
 		* prend en paramètre le nom de balise du nouvel élément 
 	- on le stocke dans une variable
+
 2°) Définition des informations de l'élément :
 	- on lui ajoute un contenu avec la propriété textContent
 	- on lui ajoute des attributs (id, classe, etc.) comme vu ci-avant
+
 3°) Insertion du nouvel élément dans le DOM
 	- on l'ajoute à son parent avec la méthode appendChild, qui
 		* est une méthode de l'élément parent du nouveau noeud
@@ -153,9 +153,6 @@ puis afficher le contenu HTML de l'ul
 */
 
 
-
-
-
 /***********************************************
  **********/
 
@@ -173,15 +170,13 @@ EXERCICE 8 :
 - Afficher le contenu HTML de la liste ainsi modifiée
 */
 
-
-
-
-
 // 2. Supprimer un noeud existant
 /* La méthode removeChild() permet de supprimer un nœud, elle
 - s'applique sur le parent
 - prend en paramètre le noeud à supprimer du DOM
 */
+
+
 /*
 EXERCICE 9 :
 - Supprimer l'élément correspondant au langage CSS que vous venez d'insérer

@@ -14,6 +14,13 @@ AIDES :
 
 // Insérez votre code ici
 
+function afficherEnfant(noeud, indice) {
+    if (noeud.children && indice >= 0 && indice < noeud.children.length) {
+        console.log(noeud.children[indice]);
+    } else {
+        console.log("Enfant introuvable pour l'indice donné");
+    }
+}
 
 
 
